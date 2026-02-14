@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin Dashboard for Courses</h1>
+    <table border="2px">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Duration</th>
+            <th>Course Price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.cname}}</td>
+            <td>{{i.cdur}}</td>
+            <td>{{i.cprice}}</td>
+            <td><a href="/edit/{{i.id}}">Edit</a></td>
+            <td><a href="/delete/{{i.id}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <script src="{% static 'js/external.js' %}"></script>
+    <img src="{% static 'image/img_1.jpg' %}" alt="no-display" width="400" height="200">
+    <img src="{% static 'image/img_2.jpg' %}" alt="no-display" width="400" height="200">
+    <h1 onclick="header()">Try me With Any Color</h1>
+    <h1 onclick="footerclick()">Footer</h1>
+</body>
+</html>
